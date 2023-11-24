@@ -1,0 +1,433 @@
+body {
+    background-color: #374586;
+}
+
+main::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 80vw;
+
+    background: linear-gradient(-233deg, #000 40%, rgba(0, 0, 0, 0) 65%) no-repeat;
+}
+
+main .personagem {
+    display: none;
+    height: 100vh;
+}
+
+main .personagem.selecionado {
+    display: flex;
+}
+main .personagem .imagem {
+    width: 700px;
+    height: 600px;
+    top: 750px;
+    left: 600px;
+    object-fit: initial;
+    position: relative;
+    border-radius: 10%;
+    z-index: 1;
+}
+
+.personagem .imagem1 {
+    width: 450px;
+    height: 300px;
+    top: 820px;
+    left: 700px;
+    z-index: 1;
+    position: relative;
+    border-radius: 15%; 
+}
+
+.personagem .imagem11 {
+    width: 450px;
+    height: 300px;
+    top: 1350px;
+    right: -250px;
+    z-index: 1;
+    position: relative;
+    border-radius: 15%;   
+}
+
+.personagem .imagem2 {
+    width: 700px;
+    height: 450px;
+    top: 760px;
+    left: 550px;
+    object-fit: initial;
+    position: relative;
+    border-radius: 10%;
+    z-index: 1;
+    
+}
+
+.personagem .imagem22 {
+    width: 700px;
+    height: 450px;
+    top: 1560px;
+    left: -150px;
+    object-fit: initial;
+    position: relative;
+    border-radius: 10%;
+    z-index: 1;
+
+    
+}
+
+.personagem .imagem3 {
+    width: 600px;
+    height: 300px;
+    top: 850px;
+    left: 550px;
+    z-index: 1;
+    position: relative;
+    border-radius: 15%;
+    
+    
+    
+}
+
+.personagem .imagem33{
+    width: 600px;
+    height: 350px;
+    top: 1380px;
+    left: 20px;
+    z-index: 1;
+    position: relative;
+    border-radius: 15%;
+
+
+}
+
+.personagem .imagem333{
+    width: 50%;
+    height: 50%;
+    top: 1880px;
+    left: -720px;
+    z-index: 1;
+    position: relative;
+    object-fit: scale-down;
+
+
+}
+.personagem .imagem3333{
+    width: 50%;
+    height: 50%;
+    top: 2280px;
+    left: -1620px;
+    z-index: 1;
+    position: relative;
+    object-fit: scale-down;
+
+
+}
+
+.logon {
+    position: absolute;
+    top: 0;
+    left: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 42vh;
+    max-width: 380px;
+    z-index: 1; 
+}
+
+.logon .logo {
+    background-image: url("../image/logo-pointer-sports.png");
+    background-size: cover;
+    height: 175px;
+    width: 400px;
+    padding-bottom: 35px;
+
+}
+.conteudo {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    min-height: 110vh;
+    max-width: 700px;
+    z-index: 1;
+}
+
+.conteudo .nome-personagem {
+    color: #ffffff;
+    font-size: 48px;
+    font-family: "Secular One";
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 300px;
+    position: relative;
+    top: 100px;
+    justify-content: center;
+    left: 700px;
+}
+
+
+.conteudo .descricao {
+    color: #ffffff;
+    font-family: "Rubik";
+    font-size: 20px;
+    line-height: 24px;
+    position: relative;
+    top: 100px;
+    align-items: center;
+    left: 70%;
+}
+
+.conteudo1 {
+    position: absolute;
+    top: 0;
+    left: 190px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    min-height: 110vh;
+    max-width: 860px;
+    z-index: 1;
+}
+
+.conteudo1 .nome-personagem1 {
+    color: #ffffff;
+    font-size: 48px;
+    font-family: "Secular One";
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 300px;
+    position: relative;
+    left: 630px;
+    top: 50px;
+}
+
+.conteudo1 .descricao1 {
+    color: #ffffff;
+    font-family: "Rubik";
+    font-size: 20px;
+    line-height: 24px;
+    position: relative;
+    left: 400px;
+    top: 150px;
+}
+
+.conteudo1 .descricao11 {
+    color: #ffffff;
+    font-family: "Rubik";
+    font-size: 20px;
+    line-height: 24px;
+    position: relative;
+    left: 400px;
+    top: 600px;
+}
+
+.conteudo1 .descricao111 {
+    color: #ffffff;
+    font-family: "Rubik";
+    font-size: 20px;
+    line-height: 24px;
+    position: relative;
+    left: 400px;
+    top: 1100px;
+    padding-bottom: 20%;
+}
+
+.conteudo2 {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    min-height: 110vh;
+    max-width: 860px;
+    z-index: 1;
+}
+
+.conteudo2 .nome-personagem2 {
+    color: #ffffff;
+    font-size: 48px;
+    font-family: "Secular One";
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    position: relative;
+    left: 600px;
+    top: 400px;
+}
+
+
+.conteudo2 .descricao2 {
+    color: #ffffff;
+    font-family: "Rubik";
+    font-size: 20px;
+    line-height: 24px;
+    position: relative;
+    left: 400px;
+    top: 400px;
+}
+
+.conteudo2 .descricao22 {
+    color: #ffffff;
+    font-family: "Rubik";
+    font-size: 20px;
+    line-height: 24px;
+    position: relative;
+    left: 400px;
+    top: 950px;
+}
+
+.conteudo2 .descricao222 {
+    color: #e0ddf4;
+    font-family: "Pacifico";
+    font-size: 30px;
+    line-height: 24px;
+    position: relative;
+    left: 550px;
+    top: 1000px;
+}
+.conteudo3 {
+    position: absolute;
+    top: 0;
+    left: 420px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    min-height: 80vh;
+    max-width: 860px;
+    z-index: 1;
+}
+.conteudo3 .nome-personagem3 {
+    color: #ffffff;
+    font-size: 48px;
+    font-family: "Secular One";
+    font-weight: 400;
+    margin-bottom: 20px; 
+    right: -350px; 
+    top: 410px;
+    position: relative;
+      
+}
+.conteudo3 .descricao3 {
+    color: #ffffff;
+    font-family: "Rubik";
+    font-size: 20px;
+    line-height: 24px;
+    position: relative;
+    top: 480px;
+    left: 40px;
+
+}
+.conteudo3 .descricao33 {
+    color: #ffffff;
+    font-family: "Rubik";
+    font-size: 20px;
+    line-height: 24px;
+    top: 930px;
+    position: relative;
+
+}
+
+.conteudo3 .descricao333 {
+    color: #ffffff;
+    font-family: "Rubik";
+    font-size: 20px;
+    line-height: 24px;
+    top: 1400px;
+    position: relative;
+}
+.conteudo3 .descricao3333 {
+    color: #ffffff;
+    font-family: "Rubik";
+    font-size: 20px;
+    line-height: 24px;
+    top: 1350px;
+    left: 100px;
+    position: relative;
+}
+
+.conteudo4 {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    min-height: 110vh;
+    max-width: 860px;
+    z-index: 1;
+    margin-top: 200px;
+}
+
+.conteudo4 .nome-personagem4 {
+    color: #ffffff;
+    font-size: 48px;
+    font-family: "Secular One";
+    font-weight: 400;
+    margin-bottom: 20px; 
+    right: -690px; 
+    top: 110px;
+    position: relative;
+}
+
+
+.conteudo4 .descricao4 {
+    color: #ffffff;
+    font-family: "Rubik";
+    font-size: 20px;
+    line-height: 24px;
+    position: relative;
+    top: 180px;
+    left: 400px;
+
+}
+
+.conteudo4 .descricao44 {
+    color: #ffffff;
+    font-family: "Rubik";
+    font-size: 20px;
+    line-height: 24px;
+    position: relative;
+    top: 200px;
+    left: 400px;
+
+}
+
+.botoes {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 184px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+.botoes .botao {
+    border: none;
+    background: #000000;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.botoes .botao img {
+    border-radius: 50%;
+}
+
+.botoes .botao.selecionado {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #D9D9D9;
+}
+
+
+
+
